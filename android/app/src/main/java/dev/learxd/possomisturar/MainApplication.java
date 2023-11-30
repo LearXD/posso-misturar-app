@@ -1,4 +1,4 @@
-package com.possomisturar;
+package dev.learxd.possomisturar;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

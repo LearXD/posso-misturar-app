@@ -7,11 +7,21 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "link": "npx react-native-asset",
+    "reverse": "adb reverse tcp:8081 tcp:8081",
+    "garbage": "TASKKILL /F /IM java.exe /T",
+    "garbage:linux": "pkill -f java",
+    "build:apk": "cd android && gradlew assembleRelease && npm run garbage",
+    "build:aab": "cd android && gradlew bundleRelease",
+    "build:debug": "cd android && gradlew app:installDebug -PreactNativeDevServerPort=8081 && npm run garbage",
+    "install:apk": "adb install ./android/app/build/outputs/apk/release/app-release.apk",
+    "install:debug": "adb install ./android/app/build/outputs/apk/debug/app-debug.apk"
   },
   "dependencies": {
     "react": "18.2.0",
-    "react-native": "0.72.7"
+    "react-native": "0.72.7",
+    "react-native-webview": "^13.6.3"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

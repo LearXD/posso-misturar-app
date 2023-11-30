@@ -1,4 +1,4 @@
-package com.possomisturar;
+package dev.learxd.possomisturar;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

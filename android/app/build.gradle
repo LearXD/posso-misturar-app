@@ -73,9 +73,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.possomisturar"
+    namespace "dev.learxd.possomisturar"
     defaultConfig {
-        applicationId "com.possomisturar"
+        applicationId "dev.learxd.possomisturar"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
